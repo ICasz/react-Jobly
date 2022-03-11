@@ -25,9 +25,8 @@ function Register () {
             setError('Passwords do not match')
             return;
         }
-        console.log("Fethcing")
         if(user.email !== "") {
-          fetch ('http://localhost:5000/addUser', {
+          fetch (`${process.env.DATABASE_URL}/addUser`, {
               method: 'POST',
               headers: { "Content-Type": "application/json"},
               body: JSON.stringify(user)

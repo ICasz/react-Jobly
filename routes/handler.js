@@ -10,7 +10,11 @@ var {Pool} = require('pg');
 //const { default: reportWebVitals } = require('../client/src/reportWebVitals');
 var pool;
 pool = new Pool ({
-  connectionString: 'postgres://postgres:root@localhost/users'
+  //connectionString: 'postgres://postgres:root@localhost/users'
+  connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false
+  }
 })
 
 router.post('/login', (req, res) => {
