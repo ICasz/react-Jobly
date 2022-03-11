@@ -7,11 +7,11 @@ const routesHandler = require('./routes/handler.js')
 const {Pool} = require('pg');
 var pool;
 pool = new Pool ({
-  //connectionString: 'postgres://postgres:root@localhost/users'
-  connectionString: process.env.DATABASE_URL,
-    ssl: {
-      rejectUnauthorized: false
-  }
+  connectionString: 'postgres://postgres:root@localhost/users'
+  // connectionString: process.env.DATABASE_URL,
+  //   ssl: {
+  //     rejectUnauthorized: false
+  // }
 })
 
 const router = express.Router();
