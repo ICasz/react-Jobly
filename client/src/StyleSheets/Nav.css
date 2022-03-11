@@ -1,0 +1,12 @@
+.navBar {
+  text-align: center;
+}
+
+.link {
+  margin: 10px;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  color: black;
+}

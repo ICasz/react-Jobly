@@ -1,0 +1,18 @@
+.registerForm {
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+.error {
+  color: red;
+}
+
+#button {
+  margin: 10px;
+  width: 75px;
+  height: 35px;
+}
